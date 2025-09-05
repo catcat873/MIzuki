@@ -1,0 +1,40 @@
+---
+import { getCollection } from "astro:content";
+import PostCard from "@/components/PostCard.astro";
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+
+const posts = (await getCollection("posts"))
+	.filter((p) => {
+		if (p.data.draft) return false;
+		const tags = (p.data.tags || []).map((t) => t.toLowerCase());
+		return tags.includes("学习") || tags.includes("study");
+	})
+	.filter((p) => {
+		const tags = (p.data.tags || []).map((t) => t.toLowerCase());
+		return tags.includes("前端") || tags.includes("frontend");
+	})
+	.sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+---
+
+<MainGridLayout title="前端学习" description="前端相关的学习与实践文章">
+	<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+		{posts.map((entry, index) => (
+			<PostCard
+				entry={entry}
+				title={entry.data.title}
+				tags={entry.data.tags}
+				category={entry.data.category}
+				published={entry.data.published}
+				updated={entry.data.updated}
+				url={`/posts/${entry.slug}/`}
+				image={entry.data.image}
+				description={entry.data.description}
+				class:list="onload-animation"
+				style={`animation-delay: calc(var(--content-delay) + ${(index + 1) * 50}ms);`}
+			/>
+		))}
+		{posts.length === 0 && (
+			<p class="p-6 text-center text-[var(--text-secondary)]">暂无“前端学习”文章，发布带 “前端/frontend” 标签的文章后会自动出现。</p>
+		)}
+	</div>
+</MainGridLayout>

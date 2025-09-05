@@ -28,7 +28,6 @@ This website is built with the **Astro** framework using the [Mizuki](https://gi
 - **10+ Languages Supported** - EN, ZH-CN, ZH-TW, JA, KO, ES, TH, VI, ID, TR
 
 ### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
 - **Friends Links Page** - Showcase friend websites with beautiful cards
 - **Diary/Moments Page** - Share life moments like social media posts
 - **Archive Page** - Organized timeline view of all posts

@@ -1,0 +1,109 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+import Layout from "@/layouts/Layout.astro";
+
+export async function getStaticPaths() {
+	const memories = (await getCollection("memories")) as any[];
+	return memories
+		.filter((memory: any) => !memory.data.draft)
+		.map((memory: any) => ({
+			params: { slug: memory.slug },
+			props: { memory },
+		}));
+}
+
+const { memory } = Astro.props as { memory: any };
+const { Content } = await memory.render();
+---
+
+<Layout title={memory.data.title} description={memory.data.description}>
+	<div class="max-w-4xl mx-auto px-4 py-8">
+		<!-- 文章标题 -->
+		<div class="mb-8">
+			<h1 class="text-4xl font-bold text-[var(--primary)] mb-4">{memory.data.title}</h1>
+			<div class="flex items-center gap-4 text-sm text-[var(--text-secondary)]">
+				<span>{memory.data.published.toLocaleDateString("zh-CN")}</span>
+				{memory.data.tags.map((tag: string) => (
+					<span class="px-2 py-1 bg-[var(--primary)] bg-opacity-10 text-[var(--primary)] rounded">
+						{tag}
+					</span>
+				))}
+			</div>
+		</div>
+
+		<!-- 岁月浅吟特有的元信息 -->
+		<div class="memories-meta mb-8 p-6 bg-[var(--card-bg)] rounded-lg border border-[var(--border)]">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+				{memory.data.mood && (
+					<div class="flex items-center gap-2">
+						<Icon name="material-symbols:mood" class="text-[var(--primary)]" />
+						<span class="text-[var(--text-secondary)]">心情：</span>
+						<span class="font-medium">{memory.data.mood}</span>
+					</div>
+				)}
+				{memory.data.weather && (
+					<div class="flex items-center gap-2">
+						<Icon name="material-symbols:wb-sunny" class="text-[var(--primary)]" />
+						<span class="text-[var(--text-secondary)]">天气：</span>
+						<span class="font-medium">{memory.data.weather}</span>
+					</div>
+				)}
+				{memory.data.location && (
+					<div class="flex items-center gap-2">
+						<Icon name="material-symbols:location-on" class="text-[var(--primary)]" />
+						<span class="text-[var(--text-secondary)]">地点：</span>
+						<span class="font-medium">{memory.data.location}</span>
+					</div>
+				)}
+			</div>
+		</div>
+
+		<!-- 文章内容 -->
+		<div class="memories-content prose prose-lg max-w-none">
+			<Content />
+		</div>
+	</div>
+</Layout>
+
+<style>
+	/* 岁月浅吟文章页面样式 */
+	:global(.memories-meta) {
+		background: linear-gradient(135deg, var(--card-bg) 0%, rgba(var(--primary-rgb), 0.05) 100%);
+	}
+
+	/* 为岁月浅吟文章添加特殊的内容样式 */
+	:global(.memories-content) {
+		line-height: 1.8;
+	}
+
+	:global(.memories-content h1) {
+		color: var(--primary);
+		border-bottom: 2px solid var(--primary);
+		padding-bottom: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	:global(.memories-content h2) {
+		color: var(--text-primary);
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	:global(.memories-content blockquote) {
+		border-left: 4px solid var(--primary);
+		background: rgba(var(--primary-rgb), 0.05);
+		padding: 1rem 1.5rem;
+		margin: 1.5rem 0;
+		border-radius: 0 8px 8px 0;
+		font-style: italic;
+	}
+
+	:global(.memories-content ul) {
+		padding-left: 1.5rem;
+	}
+
+	:global(.memories-content li) {
+		margin-bottom: 0.5rem;
+	}
+</style>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Mizuki</title><description>One demo website</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown Tutorial</title><link>https://mizuki.mysqil.com/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-tutorial/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Markdown Tutorial&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>♡陈嘉薇♡</title><description>周咚咚の小窝</description><link>https://mizuki.mysqil.com/</link><language>zh_CN</language><item><title>Markdown Tutorial</title><link>https://mizuki.mysqil.com/posts/markdown-tutorial/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-tutorial/</guid><description>A simple example of a Markdown blog post.</description><pubDate>Mon, 20 Jan 2025 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Markdown Tutorial&lt;/h1&gt;
 &lt;p&gt;A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#block-elements&quot;&gt;Block Elements&lt;/a&gt;
@@ -708,6 +708,8 @@ This is another regular paragraph.
 &lt;strong&gt;No Work&lt;/strong&gt;
 &amp;lt;/div&amp;gt;&lt;/p&gt;
 &lt;hr /&gt;
+</content:encoded></item><item><title>我的第一篇文章</title><link>https://mizuki.mysqil.com/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid><description>这是我的第一篇文章</description><pubDate>Tue, 03 Sep 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;第一篇实验文&lt;/h1&gt;
+&lt;p&gt;这篇文章为实验文章&lt;/p&gt;
 </content:encoded></item><item><title>Markdown Extended Features</title><link>https://mizuki.mysqil.com/posts/markdown-extended/</link><guid isPermaLink="true">https://mizuki.mysqil.com/posts/markdown-extended/</guid><description>Read more about Markdown features in Mizuki</description><pubDate>Wed, 01 May 2024 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;GitHub Repository Cards&lt;/h2&gt;
 &lt;p&gt;You can add dynamic cards that link to GitHub repositories, on page load, the repository information is pulled from the GitHub API.&lt;/p&gt;
 &lt;p&gt;::github{repo=&quot;matsuzaka-yuki/Mizuki&quot;}&lt;/p&gt;

@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import PostCard from "@/components/PostCard.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const posts = (await getCollection("posts"))
+	.filter((p) => !p.data.draft && (p.data.tags || []).includes("学习"))
+	.sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+---
+
+<MainGridLayout title="学习文章" description="学习与实战笔记汇总">
+	<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+		{posts.map((entry, index) => (
+			<PostCard
+				entry={entry}
+				title={entry.data.title}
+				tags={entry.data.tags}
+				category={entry.data.category}
+				published={entry.data.published}
+				updated={entry.data.updated}
+				url={`/posts/${entry.slug}/`}
+				image={entry.data.image}
+				description={entry.data.description}
+				class:list="onload-animation"
+				style={`animation-delay: calc(var(--content-delay) + ${(index + 1) * 50}ms);`}
+			/>
+		))}
+		{posts.length === 0 && (
+			<p class="p-6 text-center text-[var(--text-secondary)]">暂无带有“学习”标签的文章。</p>
+		)}
+	</div>
+</MainGridLayout>

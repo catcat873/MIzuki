@@ -43,22 +43,7 @@ export const ja: Translation = {
 	[Key.publishedAt]: "公開日",
 	[Key.license]: "ライセンス",
 	[Key.friends]: "友達",
-	[Key.anime]: "アニメ",
 	[Key.diary]: "つぶやき",
-
-	// 番剧页面
-	[Key.animeTitle]: "アニメコレクション",
-	[Key.animeSubtitle]: "私のアニメ旅行記録",
-	[Key.animeList]: "アニメリスト",
-	[Key.animeTotal]: "合計",
-	[Key.animeWatching]: "視聴中",
-	[Key.animeCompleted]: "視聴済み",
-	[Key.animeAvgRating]: "平均評価",
-	[Key.animeStatusWatching]: "視聴中",
-	[Key.animeStatusCompleted]: "視聴済み",
-	[Key.animeStatusPlanned]: "予定",
-	[Key.animeYear]: "年",
-	[Key.animeStudio]: "制作会社",
 
 	// 短文页面
 	[Key.diarySubtitle]: "いつでもどこでも、生活をシェア",
