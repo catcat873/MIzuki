@@ -40,22 +40,7 @@ enum I18nKey {
 	publishedAt = "publishedAt",
 	license = "license",
 	friends = "friends",
-	anime = "anime",
 	diary = "diary",
-
-	// 番剧页面
-	animeTitle = "animeTitle",
-	animeSubtitle = "animeSubtitle",
-	animeList = "animeList",
-	animeTotal = "animeTotal",
-	animeWatching = "animeWatching",
-	animeCompleted = "animeCompleted",
-	animeAvgRating = "animeAvgRating",
-	animeStatusWatching = "animeStatusWatching",
-	animeStatusCompleted = "animeStatusCompleted",
-	animeStatusPlanned = "animeStatusPlanned",
-	animeYear = "animeYear",
-	animeStudio = "animeStudio",
 
 	// 短文页面
 	diarySubtitle = "diarySubtitle",

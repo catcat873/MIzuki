@@ -1,3 +1,4 @@
+
 # 🌸 Mizuki  
 ![Node.js >= 20](https://img.shields.io/badge/node.js-%3E%3D20-brightgreen) 
 ![pnpm >= 9](https://img.shields.io/badge/pnpm-%3E%3D9-blue) 
@@ -257,7 +258,6 @@ export const siteConfig: SiteConfig = {
 
 ### 📱 特色頁面配置
 
-- **追番頁面：** 在 `src/pages/anime.astro` 中編輯動畫列表
 - **友鏈頁面：** 在 `src/content/spec/friends.md` 中編輯朋友數據
 - **日記頁面：** 在 `src/pages/diary.astro` 中編輯動態
 - **關於頁面：** 在 `src/content/spec/about.md` 中編輯內容

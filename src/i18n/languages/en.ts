@@ -43,22 +43,7 @@ export const en: Translation = {
 	[Key.publishedAt]: "Published at",
 	[Key.license]: "License",
 	[Key.friends]: "Friends",
-	[Key.anime]: "Anime",
 	[Key.diary]: "Moments",
-
-	// 番剧页面
-	[Key.animeTitle]: "My Anime Collection",
-	[Key.animeSubtitle]: "Documenting my anime journey",
-	[Key.animeList]: "Anime List",
-	[Key.animeTotal]: "Total",
-	[Key.animeWatching]: "Watching",
-	[Key.animeCompleted]: "Completed",
-	[Key.animeAvgRating]: "Avg Rating",
-	[Key.animeStatusWatching]: "Watching",
-	[Key.animeStatusCompleted]: "Completed",
-	[Key.animeStatusPlanned]: "Planned",
-	[Key.animeYear]: "Year",
-	[Key.animeStudio]: "Studio",
 
 	// 短文页面
 	[Key.diarySubtitle]: "Share life anytime, anywhere",

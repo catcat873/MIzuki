@@ -178,8 +178,11 @@ export const navBarConfig: NavBarConfig = {
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
-				LinkPreset.Anime,
-				LinkPreset.Diary,
+				{
+					name: "岁月浅吟",
+					url: "/diary/",
+					icon: "material-symbols:auto-stories",
+				},
 				{
 					name: "相册",
 					url: "/albums/",
@@ -212,6 +215,28 @@ export const navBarConfig: NavBarConfig = {
 					name: "时间线",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
+				},
+			],
+		},
+		{
+			name: "学习文章",
+			url: "/study/",
+			icon: "material-symbols:school",
+			children: [
+				{
+					name: "MySQL 学习",
+					url: "/study/mysql/",
+					icon: "material-symbols:database",
+				},
+				{
+					name: "前端学习",
+					url: "/study/frontend/",
+					icon: "material-symbols:code",
+				},
+				{
+					name: "后端学习",
+					url: "/study/backend/",
+					icon: "material-symbols:terminal",
 				},
 			],
 		},
