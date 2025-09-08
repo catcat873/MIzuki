@@ -67,22 +67,26 @@ export const siteConfig: SiteConfig = {
 		carousel: {
 			enable: true, // 为 true 时：为多张图片启用轮播。为 false 时：从数组中随机显示一张图片
 
-			interval: 1.5, // 轮播间隔时间（秒）
+			interval: 6, // 轮播间隔时间（秒）
 		},
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
 			title: "周咚咚の小窝", // 主页横幅主标题
-
 			subtitle: [
-				"A Showcase Demo Site",
-				"Carousel Highlight: Innovation",
-				"Carousel Focus: User Experience",
-				"Carousel Spot: Core Advantages",
+				"人生若只如初见，何事秋风悲画扇",
+				"海上生明月，天涯共此时",
+				"会当凌绝顶，一览众山小",
+				"春风得意马蹄疾，一日看尽长安花",
+				"落霞与孤鹜齐飞，秋水共长天一色",
+				"大漠孤烟直，长河落日圆",
+				"采菊东篱下，悠然见南山",
+				"欲穷千里目，更上一层楼",
+				"天生我材必有用，千金散尽还复来",
+				"长风破浪会有时，直挂云帆济沧海",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
-
 				speed: 300, // 打字速度（毫秒）
 				deleteSpeed: 50, // 删除速度（毫秒）
 				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
