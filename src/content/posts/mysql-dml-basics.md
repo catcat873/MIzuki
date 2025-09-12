@@ -3,7 +3,7 @@ title: SQL-基础-DML语句
 published: 2025-09-11
 updated: 2025-09-11
 description: DML 数据操作语句速查，包含 INSERT、UPDATE、DELETE 的常见用法与批量写法。
-image: "/images/study/mysql/image-20250908103420630.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250908103420630.png"
 category: 学习
 tags: [学习, mysql]
 draft: false
@@ -46,7 +46,7 @@ VALUES
 
 > 下图来自你本地文档，请将图片文件放到 `public/images/study/mysql/` 目录，并命名为 `image-20250908103420630.png`。
 
-![插入示意图](/images/study/mysql/image-20250908103420630.png)
+![插入示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250908103420630.png)
 
 ## DML：修改数据（UPDATE）
 
