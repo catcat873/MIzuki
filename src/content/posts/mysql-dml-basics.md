@@ -3,7 +3,7 @@ title: SQL-基础-DML语句
 published: 2025-09-11
 updated: 2025-09-11
 description: DML 数据操作语句速查，包含 INSERT、UPDATE、DELETE 的常见用法与批量写法。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250908103420630.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/哆啦a梦-DML.png"
 category: 学习
 tags: [学习, mysql]
 draft: false

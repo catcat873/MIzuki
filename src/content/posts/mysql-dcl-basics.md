@@ -3,7 +3,7 @@ title: SQL-基础-DCL语句
 published: 2025-09-11
 updated: 2025-09-11
 description: DCL 数据控制语言速查，包含用户管理与权限控制（GRANT/REVOKE）。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250911110137218.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/哆啦a梦-DCL.png"
 category: 学习
 tags: [学习, mysql]
 draft: false
