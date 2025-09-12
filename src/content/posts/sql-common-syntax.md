@@ -3,7 +3,7 @@ title: SQL-基础-DDL语句
 published: 2025-09-06
 updated: 2025-09-06
 description: 常用SQL通用语法梳理，含注释、DDL 数据库与表操作、常见数据类型与字段变更。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250904101550544.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/哆啦A梦-DDL.png"
 category: 学习
 tags: [学习, mysql]
 draft: false

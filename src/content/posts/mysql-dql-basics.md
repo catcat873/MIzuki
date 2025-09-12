@@ -3,7 +3,7 @@ title: SQL-基础-DQL语句
 published: 2025-09-11
 updated: 2025-09-11
 description: DQL 数据查询语言速查，涵盖 SELECT 基本/条件/分组/排序/分页语法与执行顺序。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250908150312124.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/哆啦a梦-DQL.png"
 category: 学习
 tags: [学习, mysql]
 draft: false
