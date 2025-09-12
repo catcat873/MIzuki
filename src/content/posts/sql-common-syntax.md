@@ -3,7 +3,7 @@ title: SQL-基础-DDL语句
 published: 2025-09-06
 updated: 2025-09-06
 description: 常用SQL通用语法梳理，含注释、DDL 数据库与表操作、常见数据类型与字段变更。
-image: "/images/study/mysql/image-20250904101550544.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250904101550544.png"
 category: 学习
 tags: [学习, mysql]
 draft: false
@@ -97,11 +97,11 @@ CREATE TABLE users (
 
 下图示意了常见整数/浮点/日期/字符串等类型的用途与范围（请以实际数据库版本文档为准）。
 
-![数据类型示意一](/images/study/mysql/image-20250904101550544.png)
+![数据类型示意一](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250904101550544.png)
 
-![数据类型示意二](/images/study/mysql/image-20250904101732706.png)
+![数据类型示意二](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250904101732706.png)
 
-![数据类型示意三](/images/study/mysql/image-20250904102653638.png)
+![数据类型示意三](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250904102653638.png)
 
 > 提示：请将图片放在 `public/images/study/mysql/` 目录下，文件名与上方引用一致，即可正常显示。
 

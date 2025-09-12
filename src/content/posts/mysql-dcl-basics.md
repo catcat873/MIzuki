@@ -3,7 +3,7 @@ title: SQL-基础-DCL语句
 published: 2025-09-11
 updated: 2025-09-11
 description: DCL 数据控制语言速查，包含用户管理与权限控制（GRANT/REVOKE）。
-image: "/images/study/mysql/image-20250911110137218.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250911110137218.png"
 category: 学习
 tags: [学习, mysql]
 draft: false
@@ -42,11 +42,11 @@ ALTER USER '用户名'@'主机名' IDENTIFIED WITH mysql_native_password BY '新
 DROP USER '用户名'@'主机名';
 ```
 
-![用户管理示意](/images/study/mysql/image-20250911110137218.png)
+![用户管理示意](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250911110137218.png)
 
 ## 权限控制
 
-![权限控制示意](/images/study/mysql/image-20250911110311727.png)
+![权限控制示意](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/mysql/image-20250911110311727.png)
 
 ### 查询权限
 
