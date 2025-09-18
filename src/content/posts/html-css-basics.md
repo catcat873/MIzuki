@@ -3,7 +3,7 @@ title: HTML-CSS 基础学习
 published: 2025-01-20
 updated: 2025-01-20
 description: HTML和CSS基础知识学习，包括标签使用、样式设置、布局技巧等前端开发必备技能。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-basics.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-封面.jpg"
 category: 学习
 tags: [学习, 前端, frontend, html, css]
 draft: false
@@ -13,7 +13,8 @@ draft: false
 
 ## HTML 基础标签
 
-### 标题标签
+### 标题标签：`<h1>-<h6>`
+
 ```html
 <h1>一级标题</h1>
 <h2>二级标题</h2>
@@ -23,7 +24,8 @@ draft: false
 <h6>六级标题</h6>
 ```
 
-### 超链接标签
+### 超链接标签：`<a href="" target="">…</a>`
+
 ```html
 <a href="" target="">链接文本</a>
 ```
@@ -36,6 +38,10 @@ draft: false
 
 ## CSS 样式基础
 
+![CSS样式基础](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/1.webp)
+
+![CSS样式应用](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/2.webp)
+
 ### 选择器类型
 
 最常见的三类选择器的写法：
@@ -46,11 +52,12 @@ draft: false
 
 > 优先级最高的是ID选择器
 
-![CSS选择器示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/css-selectors.png)
+![CSS选择器示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/3.webp)
 
-### 媒体元素
+### 引入视频
 
-#### 引入视频
+![引入视频示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/4.webp)
+
 ```html
 <video controls>
     <source src="视频文件路径" type="video/mp4">
@@ -58,16 +65,21 @@ draft: false
 </video>
 ```
 
-![视频标签示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/video-tag.png)
+### 引入图片
 
-#### 引入图片
+![引入图片示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/5.webp)
+
 ```html
 <img src="图片路径" alt="图片描述" width="宽度" height="高度">
 ```
 
-![图片标签示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/img-tag.png)
+### 标签
+
+![HTML标签示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/6.webp)
 
 ### 字符实体
+
+![字符实体示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/7.webp)
 
 常用的HTML字符实体：
 
@@ -80,11 +92,11 @@ draft: false
 | ' | `&apos;` | `&#39;` | 撇号 |
 | 空格 | `&nbsp;` | `&#160;` | 不间断空格 |
 
-![字符实体示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-entities.png)
-
 ## CSS 布局技术
 
 ### 整体居中显示
+
+![整体居中显示示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/8.webp)
 
 ```css
 .container {
@@ -95,17 +107,15 @@ draft: false
 }
 ```
 
-![整体居中示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/center-layout.png)
-
 ### CSS 盒子模型
 
-盒子模型由四个部分组成：
-1. **内容（content）**: 元素的实际内容
-2. **内边距（padding）**: 内容与边框之间的空间
-3. **边框（border）**: 围绕内边距的边框
-4. **外边距（margin）**: 边框外的空间
+**组成：** 内容（content）、内边距（padding）、边框（border）、外边距（margin）
 
-![CSS盒子模型示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/css-box-model.png)
+![CSS盒子模型示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/9.webp)
+
+### 具体使用盒子模型
+
+![盒子模型应用示例](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/10.webp)
 
 ```css
 .box {
@@ -117,13 +127,13 @@ draft: false
 }
 ```
 
-![盒子模型应用示例](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/box-model-example.png)
+## 参照页面原型，完成员工管理页面制作
 
 ### Flex 布局
 
-Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的布局模型。Flex布局可以为元素之间提供强大的布局和对齐能力。
+**flex布局** 是 Flexible Box 的缩写，意为"弹性布局"，是一种一维的布局模型。flex布局可以为元素之间提供强大的布局和对齐能力。
 
-![Flex布局示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/flex-layout.png)
+![Flex布局示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/11.webp)
 
 ```css
 .flex-container {
@@ -142,53 +152,53 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 
 ## 表单标签
 
-### 表单基础
-```html
-<form action="提交地址" method="提交方式">
-    <!-- 表单项 -->
-</form>
-```
+### 表单标签：`<form>`
 
 **表单属性：**
 - `action`: 表单数据提交的URL地址
 - `method`: 表单提交方式
-  - `get`: 表单数据拼接在URL后面，大小有限制
+  - `get`: 表单数据拼接在URL后面，？username=java，大小有限制
   - `post`: 表单数据在请求中携带，大小没有限制
 
-> 注意：表单项必须有name属性才可以提交。
+> **注意：** 表单项必须有name属性才可以提交。
 
-### 表单项类型
+### 表单标签-表单项
 
-#### input 标签的 type 属性
+**`<input>`的type属性：**
+- text, password, radio, checkbox, file, date, datetime-local, time, hidden, button, submit
+
+**`<select>`** 定义下拉列表
+
+**`<textarea>`** 定义文本域
+
 ```html
-<input type="text" name="username" placeholder="请输入用户名">
-<input type="password" name="password" placeholder="请输入密码">
-<input type="radio" name="gender" value="male"> 男
-<input type="checkbox" name="hobby" value="reading"> 阅读
-<input type="file" name="avatar">
-<input type="date" name="birthday">
-<input type="email" name="email">
-<input type="submit" value="提交">
-<input type="reset" value="重置">
+<form action="提交地址" method="提交方式">
+    <input type="text" name="username" placeholder="请输入用户名">
+    <input type="password" name="password" placeholder="请输入密码">
+    <input type="radio" name="gender" value="male"> 男
+    <input type="checkbox" name="hobby" value="reading"> 阅读
+    <input type="file" name="avatar">
+    <input type="date" name="birthday">
+    <input type="email" name="email">
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+    
+    <!-- 下拉列表 -->
+    <select name="city">
+        <option value="beijing">北京</option>
+        <option value="shanghai">上海</option>
+    </select>
+    
+    <!-- 文本域 -->
+    <textarea name="message" rows="4" cols="50" placeholder="请输入留言"></textarea>
+</form>
 ```
 
-![表单元素示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/form-elements.png)
-
-#### 其他表单元素
-```html
-<!-- 下拉列表 -->
-<select name="city">
-    <option value="beijing">北京</option>
-    <option value="shanghai">上海</option>
-</select>
-
-<!-- 文本域 -->
-<textarea name="message" rows="4" cols="50" placeholder="请输入留言"></textarea>
-```
+![表单元素示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/12.webp)
 
 ## 表格标签
 
-![HTML表格结构示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-table-structure.png)
+![HTML表格结构示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/13.webp)
 
 ```html
 <table>
@@ -209,11 +219,9 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 </table>
 ```
 
-## 实战案例：员工管理系统
+## Tlias案例代码
 
 以下是一个完整的员工管理页面示例，展示了HTML和CSS的综合应用：
-
-![员工管理系统效果图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/employee-management-demo.png)
 
 ```html
 <!DOCTYPE html>
@@ -535,10 +543,10 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 
 ## CSS 样式调整技巧
 
-### 外边距和内边距的区别
+修改 `.button-group` 的样式来增加外边距。在CSS中，使用 `margin` 属性来控制元素的外边距。
 
-- **margin**: 外边距，控制元素与其他元素之间的距离
-- **padding**: 内边距，控制元素内容与边框之间的距离
+- **margin** 是外边距，控制元素与其他元素之间的距离
+- **padding** 是内边距，控制元素内容与边框之间的距离
 
 ### 表单控件宽度调整
 
@@ -556,16 +564,15 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 }
 ```
 
-### 按钮间距控制
+- 姓名输入框 (`#employeeName`)：150px 宽
+- 性别选择框 (`#employeeGender`)：100px 宽  
+- 职位选择框 (`#employeePosition`)：150px 宽
 
-```css
-.button-group {
-    display: flex;
-    gap: 10px; /* 控制两个按钮之间的距离 */
-}
-```
+`gap: 10px;` 就是控制两个按钮之间距离的属性
 
 ## 总结
+
+![学习总结](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/14.webp)
 
 HTML和CSS是前端开发的基础，掌握这些基础知识对于构建现代化的网页应用至关重要。通过本文的学习，你应该能够：
 
