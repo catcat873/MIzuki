@@ -3,13 +3,11 @@ title: HTML-CSS 基础学习
 published: 2025-01-20
 updated: 2025-01-20
 description: HTML和CSS基础知识学习，包括标签使用、样式设置、布局技巧等前端开发必备技能。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/html-css-basics.png"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-basics.png"
 category: 学习
 tags: [学习, 前端, frontend, html, css]
 draft: false
 ---
-
-> 说明：文中的示意图请放在 `public/images/study/frontend/html-css-img/` 目录下，并保持下列文件名一致即可正常显示。
 
 # HTML-CSS 基础学习
 
@@ -48,22 +46,26 @@ draft: false
 
 > 优先级最高的是ID选择器
 
-![CSS选择器示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/css-selectors.png)
+![CSS选择器示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/css-selectors.png)
 
 ### 媒体元素
 
 #### 引入视频
 ```html
 <video controls>
-  <source src="视频文件路径" type="video/mp4">
-  您的浏览器不支持视频标签。
+    <source src="视频文件路径" type="video/mp4">
+    您的浏览器不支持视频标签。
 </video>
 ```
+
+![视频标签示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/video-tag.png)
 
 #### 引入图片
 ```html
 <img src="图片路径" alt="图片描述" width="宽度" height="高度">
 ```
+
+![图片标签示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/img-tag.png)
 
 ### 字符实体
 
@@ -78,6 +80,8 @@ draft: false
 | ' | `&apos;` | `&#39;` | 撇号 |
 | 空格 | `&nbsp;` | `&#160;` | 不间断空格 |
 
+![字符实体示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-entities.png)
+
 ## CSS 布局技术
 
 ### 整体居中显示
@@ -91,6 +95,8 @@ draft: false
 }
 ```
 
+![整体居中示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/center-layout.png)
+
 ### CSS 盒子模型
 
 盒子模型由四个部分组成：
@@ -99,7 +105,7 @@ draft: false
 3. **边框（border）**: 围绕内边距的边框
 4. **外边距（margin）**: 边框外的空间
 
-![CSS盒子模型示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/css-box-model.png)
+![CSS盒子模型示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/css-box-model.png)
 
 ```css
 .box {
@@ -111,11 +117,13 @@ draft: false
 }
 ```
 
+![盒子模型应用示例](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/box-model-example.png)
+
 ### Flex 布局
 
 Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的布局模型。Flex布局可以为元素之间提供强大的布局和对齐能力。
 
-![Flex布局示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/flex-layout.png)
+![Flex布局示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/flex-layout.png)
 
 ```css
 .flex-container {
@@ -164,6 +172,8 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 <input type="reset" value="重置">
 ```
 
+![表单元素示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/form-elements.png)
+
 #### 其他表单元素
 ```html
 <!-- 下拉列表 -->
@@ -178,7 +188,7 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 
 ## 表格标签
 
-![HTML表格结构示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/html-table-structure.png)
+![HTML表格结构示意图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-table-structure.png)
 
 ```html
 <table>
@@ -203,7 +213,7 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 
 以下是一个完整的员工管理页面示例，展示了HTML和CSS的综合应用：
 
-![员工管理系统效果图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/employee-management-demo.png)
+![员工管理系统效果图](https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/employee-management-demo.png)
 
 ```html
 <!DOCTYPE html>
@@ -550,8 +560,8 @@ Flex布局是Flexible Box的缩写，意为"弹性布局"，是一种一维的�
 
 ```css
 .button-group {
-  display: flex;
-  gap: 10px; /* 控制两个按钮之间的距离 */
+    display: flex;
+    gap: 10px; /* 控制两个按钮之间的距离 */
 }
 ```
 
