@@ -3,7 +3,7 @@ title: HTML-CSS 基础学习
 published: 2025-01-20
 updated: 2025-01-20
 description: HTML和CSS基础知识学习，包括标签使用、样式设置、布局技巧等前端开发必备技能。
-image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-封面.jpg"
+image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/frontend/html-css-img/html-css封面.jpg"
 category: 学习
 tags: [学习, 前端, frontend, html, css]
 draft: false
