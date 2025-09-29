@@ -156,3 +156,11 @@ GROUP BY userName;
 ```
 
 这条 SQL 语句通过GROUP BY子句按userName分组，然后使用COUNT(*)函数统计每个分组（即每个用户）的记录数，也就是登录次数。
+
+---
+
+学习导航：
+- [前端学习](/study/frontend)
+- [后端学习](/study/backend)
+- [MySQL学习](/study/mysql)
+- [面试题库](/study/interview)
