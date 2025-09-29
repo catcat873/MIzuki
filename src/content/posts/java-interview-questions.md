@@ -5,7 +5,7 @@ updated: 2024-09-29
 description: Java开发岗位常见面试题汇总，涵盖基础语法、集合框架、Spring Boot等核心知识点
 image: "https://cdn.jsdelivr.net/gh/catcat873/mizuki-assets@main/public/images/study/interview/java面试十道封面.jpg"
 category: 学习
-tags: [学习, 面试题, Java, 后端]
+tags: [学习, 面试题, Java]
 draft: false
 ---
 
