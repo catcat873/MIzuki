@@ -242,6 +242,11 @@ export const navBarConfig: NavBarConfig = {
 					url: "/study/backend/",
 					icon: "material-symbols:terminal",
 				},
+				{
+					name: "面试题库",
+					url: "/study/interview/",
+					icon: "material-symbols:quiz",
+				},
 			],
 		},
 	],
