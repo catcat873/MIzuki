@@ -1,0 +1,67 @@
+---
+import { getCollection } from "astro:content";
+import PostCard from "@/components/PostCard.astro";
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+
+const posts = (await getCollection("posts"))
+	.filter((p) => {
+		if (p.data.draft) return false;
+		const tags = (p.data.tags || []).map((t) => t.toLowerCase());
+		return tags.includes("学习") || tags.includes("study");
+	})
+	.filter((p) => {
+		const tags = (p.data.tags || []).map((t) => t.toLowerCase());
+		return tags.includes("面试题") || tags.includes("interview");
+	})
+	.sort((a, b) => b.data.published.getTime() - a.data.published.getTime());
+---
+
+<MainGridLayout title="面试题库" description="各种技术栈的面试题汇总，助力求职面试">
+	<div class="mb-6">
+		<h1 class="text-3xl font-bold text-[var(--primary)] mb-2">面试题库</h1>
+		<p class="text-[var(--text-secondary)]">精选各技术栈面试题，涵盖基础到进阶的知识点</p>
+	</div>
+
+	<div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
+		{posts.map((entry, index) => (
+			<PostCard
+				entry={entry}
+				title={entry.data.title}
+				tags={entry.data.tags}
+				category={entry.data.category}
+				published={entry.data.published}
+				updated={entry.data.updated}
+				draft={entry.data.draft}
+				url={`/posts/${entry.slug}/`}
+				image={entry.data.image}
+				description={entry.data.description}
+				class:list="onload-animation"
+				style={`animation-delay: calc(var(--content-delay) + ${(index + 1) * 50}ms);`}
+			/>
+		))}
+		{posts.length === 0 && (
+			<p class="p-6 text-center text-[var(--text-secondary)]">暂无面试题文章，发布带 "面试题/interview" 标签的文章后会自动出现。</p>
+		)}
+	</div>
+
+	<!-- 统计信息 -->
+	{posts.length > 0 && (
+		<div class="mt-8 p-6 bg-[var(--card-bg)] rounded-[var(--radius-large)]">
+			<h3 class="text-lg font-semibold mb-4">题库统计</h3>
+			<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+				<div class="text-center">
+					<div class="text-2xl font-bold text-[var(--primary)]">{posts.length}</div>
+					<div class="text-sm text-[var(--text-secondary)]">总题目数</div>
+				</div>
+				<div class="text-center">
+					<div class="text-2xl font-bold text-[var(--primary)]">{posts.filter(p => (p.data.tags || []).some(tag => tag.toLowerCase().includes('java'))).length}</div>
+					<div class="text-sm text-[var(--text-secondary)]">Java题目</div>
+				</div>
+				<div class="text-center">
+					<div class="text-2xl font-bold text-[var(--primary)]">{posts.filter(p => (p.data.tags || []).some(tag => tag.toLowerCase().includes('后端') || tag.toLowerCase().includes('backend'))).length}</div>
+					<div class="text-sm text-[var(--text-secondary)]">后端题目</div>
+				</div>
+			</div>
+		</div>
+	)}
+</MainGridLayout>
